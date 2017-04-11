@@ -29,9 +29,19 @@ bool buying = true;
 //prototypes
 int calcIndex();
 void getInput();
-
+void fillMachine();
 //food symbols
-char one = int(185);
+string Chips1 = "2Chips";
+string Chips2 = "2Chips";
+string Chips3 = "2Chips";
+string Chips4 = "2Chips";
+char chips = int(184);
+
+//item indexes
+int lowerchipIndex = 0;
+int upperChipIndex = 16;
+int lowerCandyIndex = 17;
+int upperCandyIndex = 
 
 
 
@@ -46,7 +56,15 @@ int calcIndex() {
 
 }
 
-void getInput() {
+void fillMachine(){
+	
+for(int i = 0; i < MAX_SLOTS; i++){
+	
+	if ( i > lowerchipInder && i < upperChipInder){
+	}
+}	
+}
+	void getInput() {
 	int left;
 	int right;
 	bool good = false;

@@ -27,6 +27,12 @@
     <ClInclude Include="VendingSlot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="VendingItems.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VendingImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -36,6 +42,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="VendingSlot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VendingItems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VendingImage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

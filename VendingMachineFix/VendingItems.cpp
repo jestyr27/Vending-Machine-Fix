@@ -1,19 +1,34 @@
 #include "stdafx.h"
 #include "VendingItems.h"
-#include "VendingImage.h"
 #include <string>
+#include "LFSR.h"
+
+using namespace std;
 
 
-VendingItems::VendingItems()
-{
-	
-	int number;
-	string name;
-	VendingImage image;
-	double price;
+VendingItems::VendingItems(){
+
+		void itemCreate(int number, int slot) {
+
+			VendingItems::VendingItems item;
+			item.number = number;
+			string.name = NameList();
+			item.price = PriceList();
+
+		};
+
+		void generateItems(){
+			LFSR lfsr("01101000010", 28);
+
+			for (int i = 0; i < 28; i++)
+				int bit = lfsr.step();
+
+
+			for (int i = 0; i < 28; i++) {
+				for (int j = 0; j < 28; j++) {
+					number = lfsr.generate(j);
+					itemCreate(number, i);
+				};
+			};
 }
 
-
-VendingItems::~VendingItems()
-{
-}

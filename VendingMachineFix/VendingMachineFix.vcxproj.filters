@@ -30,7 +30,7 @@
     <ClInclude Include="VendingItems.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="VendingImage.h">
+    <ClInclude Include="LFSR.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -47,7 +47,7 @@
     <ClCompile Include="VendingItems.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="VendingImage.cpp">
+    <ClCompile Include="LFSR.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -7,8 +7,13 @@ using namespace std;
 
 
 VendingItems::VendingItems(){
+	void itemCreate(int number);
 
-		void itemCreate(int number, int slot) {
+	itemCreate();
+
+
+
+		void itemCreate(int number) {
 
 			VendingItems::VendingItems item;
 			item.number = number;
@@ -17,7 +22,8 @@ VendingItems::VendingItems(){
 
 		};
 
-		void generateItems(){
+		void generateItems() {
+
 			LFSR lfsr("01101000010", 28);
 
 			for (int i = 0; i < 28; i++)
@@ -30,5 +36,6 @@ VendingItems::VendingItems(){
 					itemCreate(number, i);
 				};
 			};
+		};
 }
 

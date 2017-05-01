@@ -161,12 +161,26 @@ void displaySlots(){
 	
 	
 	int slotCounter = 0;
+	
 	for(int i = 0; i < MAX_ROWS; i++)
 	{
 		for(int j = 0; j < MAX_COLUMNS; j++){
 			//i = y = rows, j = x = columns
 			setCursor( (j*7+3),(i*4+2) );
 			cout <<  i+1 << j+1;
+			cout << slot[slotCounter].getItem();
+			cout << slot[slotCounter].getPrice();
+			//checks if the width of the slot is 2 or more, if so it bumps the slotCounter up to skip it and 
+			//checks of j is at a boundry if it is it'll skip j to the first slot in the next row and fix i
+			if(slot[slotCounter].getWidth > 1)
+			{
+				if(j > (MAX_COLUMNS -1)){
+					j = 0;
+					i++;	
+				}
+				slotCounter++;
+				
+			}
 			slotCounter++;
 		}
 	}
